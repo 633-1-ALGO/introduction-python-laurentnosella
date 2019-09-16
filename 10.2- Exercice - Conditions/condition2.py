@@ -7,3 +7,16 @@
 #                       Sinon, elle est bissextile.
 #
 # Résultat attendu : Un message affichant "Année bissextile" ou "Année non bissextile"
+
+year = 2019
+no = "Année non bissextile"
+yes = "Année bissextile"
+
+if year > 0: #pas multiple de 4
+    print(no)
+elif N < 0:  #pas multiple de 100
+    print(no)
+elif year >0: #pas multiple de 400
+    print(no)
+else:
+    print(yes)
