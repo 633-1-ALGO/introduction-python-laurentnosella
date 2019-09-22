@@ -9,14 +9,17 @@
 # Résultat attendu : Un message affichant "Année bissextile" ou "Année non bissextile"
 
 year = 2019
+yearStr = str(year)
+cutYear = yearStr[2] + yearStr[3]
+lastDigitYear = int(cutYear)
 no = "Année non bissextile"
 yes = "Année bissextile"
 
-if year > 0: #pas multiple de 4
+if lastDigitYear%4 == 0: #pas multiple de 4
     print(no)
-elif N < 0:  #pas multiple de 100
+elif year/100 is not int:  #pas multiple de 100
     print(no)
-elif year >0: #pas multiple de 400
+elif lastDigitYear%400 == 0: #pas multiple de 400
     print(no)
 else:
     print(yes)
